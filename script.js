@@ -1,4 +1,19 @@
-// LOADER
+// Desktop keyboard enter
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        startSystem();
+    }
+});
+
+// Mobile tap support
+document.addEventListener("click", function() {
+    startSystem();
+});
+
+// Optional touch support
+document.addEventListener("touchstart", function() {
+    startSystem();
+});// LOADER
 window.onload = () => {
   const loader = document.getElementById("loader");
   if (loader) loader.style.display = "none";
