@@ -187,5 +187,22 @@
 </section>
 
 <script src="script.js"></script>
+  <script>
+function startSystem() {
+    window.location.href = "home.html";
+}
+
+// Enter key for PC
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        startSystem();
+    }
+});
+
+// Tap for phones
+document.addEventListener("click", function() {
+    startSystem();
+});
+</script>
 </body>
 </html>
